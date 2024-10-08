@@ -1,0 +1,15 @@
+.footer{
+    background-color: #FD8B51;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+span{
+    color: red;
+    margin: 7px;
+}

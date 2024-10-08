@@ -1,0 +1,9 @@
+.lista{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lista-receitas img{
+    width: 100px;
+}
