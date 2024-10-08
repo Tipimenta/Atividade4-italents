@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Projeto de Cadastro de Receitas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação React para cadastrar e listar animes. Nele, você pode adicionar Receitas com o titulo, link para a capa (imagem) e uma descrição do modo de preparo ou Puxar aleatoreamente uma receita da API por meio do endpoint https://www.themealdb.com/api/json/v1/1/random.php. As receitas cadastradas são salvas em um db.json e serão exibidos em uma listagem, podendo posteriomente ser atualizadas ou removidas.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Cadastro de receitas com nome, link da capa e descrição dop mode do prepara.
+- Exibição de uma lista de receitas cadastrados manualmente ou sendo adicionada por meio da API de forma aleatoria.
+- É possivel atualizar as receitas cadastradas
+- É possivel a remocação da receita.
+- Dados persistidos em um arquivo db.json.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias Utilizadas
 
-### `npm test`
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **CSS Modules**: Para estilização dos componentes.
+- **JavaScript**: Usado para manipulação de estados e lógica da aplicação.
+- **npx create-react-app**: Ferramenta usada para iniciar o projeto.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requisitos
 
-### `npm run build`
+- Node.js (v12 ou superior)
+- db.json 
+- npm ou yarn para gerenciamento de pacotes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Como Rodar o Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Passo 1: Clonar o Repositório
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Abra o terminal e execute o seguinte comando:
+```
+git clone https://github.com/Tipimenta/Atividade4-italents.git
+```
 
-### `npm run eject`
+Passo 2: Instalar Dependências
+Após clonar o repositório, entre na pasta do projeto e instale as dependências com o seguinte comando:
+```
+cd seu-repositorio
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3- Instale o json-server globalmente (caso ainda não tenha instalado):
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm install -g json-server
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4 - json-server --watch db.json --port 5000 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Passo 5: Executar a Aplicação
+Com as dependências instaladas, execute o seguinte comando para iniciar o servidor de desenvolvimento:
+```
+npm start
+```
+Isso iniciará a aplicação localmente no endereço http://localhost:3000.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
